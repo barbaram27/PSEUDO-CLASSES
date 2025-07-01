@@ -1,33 +1,50 @@
-/* LINKS */
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+/* ========= 1. LINKS ========== */
 a {
-  color: #007BFF;          /* Cor de destaque */
-  font-weight: bold;       /* Negrito padrão */
+  color: #0066cc;           /* Cor de destaque */
+  font-weight: bold;        /* Negrito padrão */
   text-decoration: none;
 }
 
 a:hover {
-  color: #0056b3;          /* Cor ao passar o mouse (mais escura) */
+  color: #004c99;           /* Cor mais escura ao passar o mouse */
 }
 
 a:visited {
-  font-weight: normal;     /* Remove o negrito se já foi visitado */
+  font-weight: normal;      /* Visitado = sem negrito */
 }
 
-/* PRIMEIRA LETRA DO PRIMEIRO PARÁGRAFO */
+/* ========= 2. PRIMEIRA LETRA DO 1º PARÁGRAFO ========== */
 .principal p:first-of-type::first-letter {
-  font-size: 300%;          /* 3x maior */
-  font-family: Georgia, serif; /* Fonte diferente */
-  float: left;              /* Flutuar à esquerda */
-  padding-right: 6px;
+  font-size: 300%;             /* 3x maior */
+  font-family: 'Georgia', serif; /* Fonte diferente */
+  float: left;
+  padding-right: 8px;
+  color: #cc0000;
 }
 
-/* MENU COM BORDAS */
-.menu-design li {
-  border-top: 1px solid #ccc; /* Borda superior em todos os itens */
+/* ========= 3. MENU COM BORDAS ========= */
+.menu-design ul {
   list-style: none;
-  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.menu-design li {
+  padding: 12px;
+  border-top: 1px solid #ccc;     /* Todos com borda superior */
 }
 
 .menu-design li:last-child {
-  border-bottom: 1px solid #ccc; /* Borda inferior só no último item */
+  border-bottom: 1px solid #ccc;  /* Último com borda inferior */
 }
