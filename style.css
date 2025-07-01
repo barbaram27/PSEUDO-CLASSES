@@ -1,4 +1,4 @@
-/* RESET BÁSICO */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -7,44 +7,56 @@
 
 body {
   font-family: Arial, sans-serif;
-  padding: 30px;
+  padding: 40px;
+  background-color: #fdfdfd;
+  color: #333;
 }
 
-/* ========= 1. LINKS ========== */
+/* LINKS */
 a {
-  color: #0066cc;           /* Cor de destaque */
-  font-weight: bold;        /* Negrito padrão */
+  color: #0066cc;
+  font-weight: bold;
   text-decoration: none;
 }
 
 a:hover {
-  color: #004c99;           /* Cor mais escura ao passar o mouse */
+  color: #003366;
 }
 
 a:visited {
-  font-weight: normal;      /* Visitado = sem negrito */
+  font-weight: normal;
 }
 
-/* ========= 2. PRIMEIRA LETRA DO 1º PARÁGRAFO ========== */
+/* PRIMEIRA LETRA DO 1º PARÁGRAFO */
 .principal p:first-of-type::first-letter {
-  font-size: 300%;             /* 3x maior */
-  font-family: 'Georgia', serif; /* Fonte diferente */
+  font-size: 300%;
+  font-family: 'Georgia', serif;
   float: left;
   padding-right: 8px;
   color: #cc0000;
 }
 
-/* ========= 3. MENU COM BORDAS ========= */
+/* MENU */
 .menu-design ul {
   list-style: none;
+  max-width: 400px;
   margin-bottom: 40px;
+  padding-left: 0;
 }
 
 .menu-design li {
   padding: 12px;
-  border-top: 1px solid #ccc;     /* Todos com borda superior */
+  border-top: 1px solid #ccc;
+  background-color: #f8f8f8;
 }
 
 .menu-design li:last-child {
-  border-bottom: 1px solid #ccc;  /* Último com borda inferior */
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-design li a {
+  display: block;
+  color: #0066cc;
+  font-weight: bold;
+  padding-left: 10px;
 }
